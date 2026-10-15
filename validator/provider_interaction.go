@@ -12,7 +12,8 @@ import (
 	"go.uber.org/zap"
 )
 
-var supportedSpecVersions = []string{"0.10.2", "0.10.3", "0.10.4"}
+// 0.10.3-rc.0: what Alchemy and Chainstack mainnet nodes report for rpc/v0_10 (2026-10).
+var supportedSpecVersions = []string{"0.10.2", "0.10.3", "0.10.3-rc.0", "0.10.4"}
 
 // Returns a new Starknet.Go RPC Provider
 func NewProvider(

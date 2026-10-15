@@ -45,7 +45,7 @@ func TestNewProvider(t *testing.T) {
 	})
 
 	t.Run("Supported spec version", func(t *testing.T) {
-		for _, specVersion := range []string{"0.10.3", "v0.10.3", "0.10.4"} {
+		for _, specVersion := range []string{"0.10.3", "v0.10.3", "0.10.3-rc.0", "0.10.4"} {
 			t.Run(specVersion, func(t *testing.T) {
 				server := mockNodeWithSpecVersion(t, specVersion)
 
